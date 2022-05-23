@@ -29,6 +29,6 @@ export const MessageForm = ({message, setMessage, post_id, token, APIURL }) => {
             <input type="text" placeholder="Type your message here" autoComplete='off' onChange={(e) => {
                   setMessage(e.target.value)}}>
             </input>
-            <button classname='button' onClick={()=>{postMessages(); setMessage('')}}><Link className='myPostsLinks'to='/home'>Send</Link></button>
+            <button classname='button' onClick={()=>{postMessages(); setMessage('')}}><Link className='myPostsLinks'to='/'>Send</Link></button>
     </form> 
 }

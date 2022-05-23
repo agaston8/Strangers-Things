@@ -30,12 +30,12 @@ import { Login } from "./login";
                 <span>
                     <Link className="link" to="/inbox">Inbox</Link> 
                     <Link className="link" to="/posts">Posts</Link> 
-                    <Link className='link' to='/home' onClick={()=>{LogOut()}}>LogOut</Link>
+                    <Link className='link' to='/' onClick={()=>{LogOut()}}>LogOut</Link>
                 </span> : ""}
             </div>
         </div>      
         <div>
-            <Route path="/home">
+            <Route exact path="/">
                 <RenderPosts token={token} APIURL={APIURL} username={username} />
             </Route>
             <Route path="/inbox">

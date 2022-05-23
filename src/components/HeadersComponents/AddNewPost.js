@@ -27,7 +27,7 @@ const AddNewPost =  ({token}) => {
         <form id="createPost" onSubmit={async(e)=>{
                     e.preventDefault();
                     postNewPost();
-                    history.push("/home");
+                    history.push("/");
             }}>
            <div>
               <label>Title: </label>
