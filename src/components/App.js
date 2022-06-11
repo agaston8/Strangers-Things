@@ -25,7 +25,7 @@ import { Login } from "./login";
             <h1>Stranger's Things</h1>
             <div id='headerLinks'>
              {token ? "": <Link className="link" to='/login'>Login</Link>}
-                <Link className="link" to='/home'>Home</Link>
+                <Link className="link" to='/'>Home</Link>
             {token ? 
                 <span>
                     <Link className="link" to="/inbox">Inbox</Link> 
